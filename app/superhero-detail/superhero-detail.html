@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="header">Marvel Details <a href="#!/marvel-superhero" class="back">[Back to Search]</a></div>
+  <div class="character-data">
+    <div class="thumbnail">
+      <div ng-repeat="data in character">
+        <img ng-src="{{data.thumbnail.path + '.' + data.thumbnail.extension}}" class="thumbnail">
+      </div>
+    </div>
+    <div class="mini-detail">
+      <div ng-repeat="data in character">
+        <div>
+            <div>
+              <div>Id:</div>
+              <div><p><em>{{data.id}}</em></div>
+            </div>
+            <div>
+              <div>Name:</div>
+              <div><p><strong>{{data.name}}</strong></p></div>
+            </div>
+            <div>
+              <div>Description:</div>
+              <div><p>{{data.description}}</p></div>
+            </div>
+            <div>
+              <div>Series:</div>
+              <div><p>Available: {{data.series.available}}</p></div>
+              <div><p>Returned: {{data.series.returned}}</p></div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

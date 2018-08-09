@@ -1,0 +1,15 @@
+<div class="container">
+  <img src="../img/marvel-logo.png" width="200" class="logo"/>
+  <div class="search">
+    <input type="text" name="" id="myInpt" placeholder="Search Marvel">
+    <div class="sresults">
+      <ul>
+        <li ng-repeat="res in fetched">
+          <!-- <a href="#!/superhero-detail/{{res.id}}">{{res.name}}</a> -->
+          <a href="#!/superhero-detail/{{res.id}}">{{res.name}}</a>
+          <!-- <p ng-if="res.description">{{res.description}}</p> -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
